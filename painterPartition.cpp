@@ -1,3 +1,4 @@
+#include <iostream>
 #include<vector>
 using namespace std;
 
@@ -9,7 +10,7 @@ bool isPossible(vector<int> arr, int n, int m, int mid){
         if(wallSum + arr[i] <= mid){
             wallSum += arr[i];
         }else{
-            painnterCount++;
+            painterCount++;
             if(painterCount>m || arr[i] > mid){
                 return false;
             }
